@@ -1,0 +1,613 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="../../../../assets/admin/images/favicon-32x32.png" type="image/png">
+    <!--plugins-->
+    <link href="../../../assets/admin/plugins/simplebar/css/simplebar.css" rel="stylesheet">
+    <link href="../../../assets/admin/plugins/fullcalendar/css/main.min.css" rel="stylesheet">
+    <link href="../../../assets/admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="../../../assets/admin/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet">
+    <!-- loader-->
+    <link href="../../../assets/admin/css/pace.min.css" rel="stylesheet">
+    <script src="../../../assets/admin/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="../../../assets/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/admin/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="../../../assets/admin/css/app.css" rel="stylesheet">
+    <link href="../../../assets/admin/css/icons.css" rel="stylesheet">
+    <!-- Theme Style CSS -->
+    <link rel="stylesheet" href="../../../../assets/admin/css/dark-theme.css">
+    <link rel="stylesheet" href="../../../../assets/admin/css/semi-dark.css">
+    <link rel="stylesheet" href="../../../../assets/admin/css/header-colors.css">
+    <title>Aurora Coffee - Admin Dashboard</title>
+</head>
+
+<body class="  pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99"
+            style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+    <!--wrapper-->
+    <div class="wrapper">
+        <!--start header -->
+        <header>
+            <div class="topbar d-flex align-items-center">
+                <nav class="navbar navbar-expand">
+                    <div class="topbar-logo-header">
+                        <div class="px-5 mx-4">
+                            <img src="../../../assets/admin/images/avatars/Aurora_Coffee.png" style="scale: 6;"
+                                class="logo-icon" alt="logo icon">
+                        </div>
+
+                    </div>
+                    <div class="mobile-toggle-menu"><i class='bx bx-menu'></i></div>
+                    <div class="top-menu ms-auto">
+                    </div>
+                    <div class="user-box dropdown">
+                        <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../../assets/admin/images/avatars/avatar-2.png" class="user-img"
+                                alt="user avatar">
+                            <div class="user-info ps-3">
+                                <p class="user-name mb-0">Minh Tuan Le</p>
+                                <p class="designattion mb-0">Manager</p>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-user"></i><span>Profile</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-cog"></i><span>Settings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-home-circle'></i><span>Dashboard</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-dollar-circle'></i><span>Earnings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-download'></i><span>Downloads</span></a>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider mb-0"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="../adminGit/pages/"><i
+                                        class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--end header -->
+        <!--navigation-->
+        <div class="nav-container primary-menu">
+            <div class="mobile-topbar-header">
+                <div>
+                    <img src="../../../assets/admin/admin/images/logo-icon.png" class="logo-icon" alt="logo icon">
+                </div>
+                <div>
+                    <h4 class="logo-text">Rukada</h4>
+                </div>
+                <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-xl w-100">
+                <ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../indexAdmin.html">
+                            <div class="parent-icon"><i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="menu-title">Trang Chủ</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../pagesAdmin/ord.html">
+                            <div class="parent-icon"><i class="fa-solid fa-mug-saucer"></i>
+                            </div>
+                            <div class="menu-title">Đặt Món</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../pagesAdmin/ban.html">
+                            <div class="parent-icon"><i class="fa-solid fa-couch"></i>
+                            </div>
+                            <div class="menu-title">Quản Lý Bàn</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../pagesAdmin/diem-danh.html">
+                            <div class="parent-icon"><i class="fa-solid fa-business-time"></i>
+                            </div>
+                            <div class="menu-title">Chấm Công Nhân Viên</div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"
+                            data-bs-toggle="dropdown">
+                            <div class="parent-icon"><i class="fa-solid fa-bars-progress"></i>
+                            </div>
+                            <div class="menu-title">Quản Lý Cafe</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="../../../pagesAdmin/quanlycafe/kho.html"><i
+                                        class="bx bx-right-arrow-alt"></i>Kho</a>
+                            </li>
+                            <li> <a class="dropdown-item" href="../../../pagesAdmin/quanlycafe/mon.html"><i
+                                        class="bx bx-right-arrow-alt"></i>Món</a>
+                            </li>
+                            <li> <a class="dropdown-item" href="../../../pagesAdmin/quanlycafe/vattu.html"><i
+                                        class="bx bx-right-arrow-alt"></i>Vật Tư</a>
+                            </li>
+
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"
+                            data-bs-toggle="dropdown">
+                            <div class="parent-icon"><i class="fa-solid fa-person"></i>
+                            </div>
+                            <div class="menu-title">Quản Lý Nhân Viên</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="../../../pagesAdmin/quanlynhanvien/nhanvien.html"><i
+                                        class="bx bx-right-arrow-alt"></i>Nhân Viên</a>
+                            </li>
+                            <li> <a class="dropdown-item" href="../../../pagesAdmin/quanlynhanvien/phanquyen.html"><i
+                                        class="bx bx-right-arrow-alt"></i>Phân Quyền</a>
+                            </li>
+                            <li> <a class="dropdown-item" href="../../../pagesAdmin/quanlynhanvien/quanlyluong.html"><i
+                                        class="bx bx-right-arrow-alt"></i>Quản Lý Lương</a>
+                            </li>
+                            <li> <a class="dropdown-item" href="../../../pagesAdmin/quanlynhanvien/thuong-phat.html"><i
+                                        class="bx bx-right-arrow-alt"></i>Thưởng/Phạt</a>
+                            </li>
+
+                        </ul>
+                    <li class="nav-item dropdown" style="background-color: #AB826B;">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret text-light" href="javascript:;"
+                            data-bs-toggle="dropdown">
+                            <div class="parent-icon"><i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+                            <div class="menu-title">Quản Lý Doanh Thu</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="../quanly.html"><i class="bx bx-right-arrow-alt"></i>Quản
+                                    Lý</a>
+                            </li>
+                            <li> <a class="dropdown-item" href="../chuquan.html"><i class="bx bx-right-arrow-alt"></i>Chủ
+                                    Quán</a>
+                            </li>
+                        </ul>
+                </ul>
+            </nav>
+        </div>
+        <!--end navigation-->
+        <!--start page wrapper -->
+        <div class="page-wrapper">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="my-3 text-center" style="color: #AB826B;">Danh Mục Quản Lý</h5>
+                                <div class="fm-menu">
+                                    <div class="list-group list-group-flush"> <a href="../quanly.html"
+                                            class="list-group-item py-1"><i class="bx bx-folder me-2"></i><span>Lịch Làm
+                                                Việc</span></a>
+                                        <a href="./nhanvien.html" class="list-group-item py-1"
+                                            style="background-color: #AB826B; color: white;"><i
+                                                class="bx bx-devices me-2"></i><span>Nhân Viên</span></a>
+                                        <a href="./tongketdoanhthu.html" class="list-group-item py-1"><i
+                                                class="bx bx-analyse me-2"></i><span>Tổng Kết Doanh Thu</span></a>
+                                        <a href="./vattu.html" class="list-group-item py-1"><i
+                                                class="bx bx-plug me-2"></i><span>Vật Tư</span></a>
+                                        <a href="./kho.html" class="list-group-item py-1"><i
+                                                class="bx bx-trash-alt me-2"></i><span>Kho</span></a>
+                                        <a href="./pheduyet.html" class="list-group-item py-1"><i
+                                                class="bx bx-file me-2"></i>
+                                            <span>Phê Duyệt</span></a>
+                                        <a href="./baocao.html" class="list-group-item py-1"><i
+                                                class="bx bx-image me-2"></i><span>Báo Cáo</span></a>
+                                        <a href="./ghichu.html" class="list-group-item py-1"><i
+                                                class="bx bx-video me-2"></i><span>Ghi Chú</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--breadcrumb-->
+                    <!--end breadcrumb-->
+                    <div class="col-12 col-lg-9">
+                        <div class="card" style="border-bottom: 5px solid  #AB826B;">
+                            <div class="card-header ">
+                                <h4 class=" mb-0 text-center align-middle py-2" style="color: #AB826B;"><b>Nhân Viên</b>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center align-middle text-nowrap"
+                                                    style="background-color: #AB826B; color:white;"> # </th>
+                                                <th class="text-center align-middle text-nowrap"
+                                                    style="background-color: #AB826B; color:white;">Tên Nhân Viên </th>
+                                                <th class="text-center align-middle text-nowrap"
+                                                    style="background-color: #AB826B; color:white;">Tăng Ca </th>
+                                                <th class="text-center align-middle text-nowrap"
+                                                    style="background-color: #AB826B; color:white;">Đi Trễ</th>
+                                                <th class="text-center align-middle text-nowrap"
+                                                    style="background-color: #AB826B; color:white;">Ghi Chú Lỗi</th>
+                                                <th class="text-center align-middle text-nowrap"
+                                                    style="background-color: #AB826B; color:white;"> Tình Trạng Thưởng
+                                                    Phạt</th>
+                                                <th class="text-center align-middle text-nowrap"
+                                                    style="background-color: #AB826B; color:white;"> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-center align-middle text-nowrap">1</th>
+                                                <td class="align-middle text-nowrap">Lê Minh Tuấn</td>
+                                                <td class="align-middle text-nowrap">13:00h</td>
+                                                <td class="align-middle text-nowrap">0</td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary" style="width: 100px;">Chi Tiết</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-success" style="width: 100px;">Thưởng</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary me-1" data-bs-toggle="modal"
+                                                        data-bs-target="#capNhatModal" style="width: 100px;">Cập
+                                                        Nhật</button><button class="btn btn-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#xoaModal"
+                                                        style="width: 100px;">Xóa</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center align-middle text-nowrap">2</th>
+                                                <td class="align-middle text-nowrap">Nguyễn Quang Huy</td>
+                                                <td class="align-middle text-nowrap">13:00h</td>
+                                                <td class="align-middle text-nowrap">4</td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary" style="width: 100px;">Chi Tiết</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-danger" style="width: 100px;">Phạt</button></td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary me-1" data-bs-toggle="modal"
+                                                        data-bs-target="#capNhatModal" style="width: 100px;">Cập
+                                                        Nhật</button><button class="btn btn-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#xoaModal"
+                                                        style="width: 100px;">Xóa</button></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center align-middle text-nowrap">3</th>
+                                                <td class="align-middle text-nowrap">Đoàn Võ Văn Trọng</td>
+                                                <td class="align-middle text-nowrap">13:00h</td>
+                                                <td class="align-middle text-nowrap">0</td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary" style="width: 100px;">Chi Tiết</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-success" style="width: 100px;">Thưởng</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary me-1" data-bs-toggle="modal"
+                                                        data-bs-target="#capNhatModal" style="width: 100px;">Cập
+                                                        Nhật</button><button class="btn btn-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#xoaModal"
+                                                        style="width: 100px;">Xóa</button></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center align-middle text-nowrap">4</th>
+                                                <td class="align-middle text-nowrap">Nguyễn Đức Ninh</td>
+                                                <td class="align-middle text-nowrap">00:00h</td>
+                                                <td class="align-middle text-nowrap">0</td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary" style="width: 100px;">Chi Tiết</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-success" style="width: 100px;">Thưởng</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary me-1" data-bs-toggle="modal"
+                                                        data-bs-target="#capNhatModal" style="width: 100px;">Cập
+                                                        Nhật</button><button class="btn btn-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#xoaModal"
+                                                        style="width: 100px;">Xóa</button></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center align-middle text-nowrap">5</th>
+                                                <td class="align-middle text-nowrap">Phan Trần Thiện Ân</td>
+                                                <td class="align-middle text-nowrap">08:00h</td>
+                                                <td class="align-middle text-nowrap">17</td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary" style="width: 100px;">Chi Tiết</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-danger" style="width: 100px;">Phạt</button></td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary me-1" data-bs-toggle="modal"
+                                                        data-bs-target="#capNhatModal" style="width: 100px;">Cập
+                                                        Nhật</button><button class="btn btn-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#xoaModal"
+                                                        style="width: 100px;">Xóa</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center align-middle text-nowrap">6</th>
+                                                <td class="align-middle text-nowrap">Nguyễn Văn An</td>
+                                                <td class="align-middle text-nowrap">10:00h</td>
+                                                <td class="align-middle text-nowrap">3</td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-primary" style="width: 100px;">Chi Tiết</button>
+                                                </td>
+                                                <td class="text-center align-middle text-nowrap"><button
+                                                        class="btn btn-success" style="width: 100px;">Thưởng</button>
+                                                </td>
+                                                <td class="text-center align-middle"><button
+                                                        class="btn btn-primary me-1" data-bs-toggle="modal"
+                                                        data-bs-target="#capNhatModal" style="width: 100px;">Cập
+                                                        Nhật</button><button class="btn btn-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#xoaModal"
+                                                        style="width: 100px;">Xóa</button></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal fade" id="capNhatModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Cập Nhật Nhân Viên
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12"><label class="form-label">Tên Nhân
+                                                            Viên</label><input type="text" class="form-control"
+                                                            placeholder="Nhập tên Nhân Viên">
+                                                    </div>
+                                                    <div class="col-12"><label class="form-label mt-3">Lương Cơ Bản
+                                                        </label><input type="text" class="form-control"
+                                                            placeholder="Nhập lương cơ bản"></div>
+                                                    <div class="col-12"><label class="form-label mt-3">Thể
+                                                            Loại</label><select class="form-control">
+                                                            primary value="1"&gt;Chi Tiết
+                                                            <option value="0">Chi Tiết</option>
+                                                        </select></div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"><button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button><button type="button"
+                                                    class="btn btn-primary" data-bs-dismiss="modal">Cập Nhật</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="xoaModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Xóa Nhân Viên</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div
+                                                    class="alert alert-warning border-0 bg-warning alert-dismissible fade show py-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="font-35 text-dark"><i class="bx bx-info-circle"></i>
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <h6 class="mb-0 text-dark">Warning</h6>
+                                                            <div class="text-dark">
+                                                                <p>Bạn có muốn xóa <b>Nhân Viên</b> này không?
+                                                                </p>
+                                                                <p><b>Lưu ý:</b> Điều này không thể hoàn tác! </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"><button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button><button type="button"
+                                                    class="btn btn-danger" data-bs-dismiss="modal">Xóa</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end page wrapper -->
+        <!--start overlay-->
+        <div class="overlay toggle-icon"></div>
+        <!--end overlay-->
+        <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top" style="display: none;"><i
+                class="bx bxs-up-arrow-alt"></i></a>
+        <!--End Back To Top Button-->
+        <footer class="page-footer">
+            <p class="mb-0">Copyright © 2021. All right reserved.</p>
+        </footer>
+    </div>
+    <!--end wrapper-->
+    <!--start switcher-->
+    <div class="switcher-wrapper">
+        <div class="switcher-btn"> <i class="bx bx-cog bx-spin"></i>
+        </div>
+        <div class="switcher-body">
+            <div class="d-flex align-items-center">
+                <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+                <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+            </div>
+            <hr>
+            <h6 class="mb-0">Theme Styles</h6>
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked="">
+                    <label class="form-check-label" for="lightmode">Light</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
+                    <label class="form-check-label" for="darkmode">Dark</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark">
+                    <label class="form-check-label" for="semidark">Semi Dark</label>
+                </div>
+            </div>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
+                <label class="form-check-label" for="minimaltheme">Minimal Theme</label>
+            </div>
+            <hr>
+            <h6 class="mb-0">Header Colors</h6>
+            <hr>
+            <div class="header-colors-indigators">
+                <div class="row row-cols-auto g-3">
+                    <div class="col">
+                        <div class="indigator headercolor1" id="headercolor1"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor2" id="headercolor2"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor3" id="headercolor3"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor4" id="headercolor4"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor5" id="headercolor5"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor6" id="headercolor6"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor7" id="headercolor7"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor8" id="headercolor8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end switcher-->
+    <!-- Bootstrap JS -->
+    <script src="../../../assets/admin/js/bootstrap.bundle.min.js"></script>
+    <!--plugins-->
+    <script src="../../../assets/admin/js/jquery.min.js"></script>
+    <script src="../../../assets/admin/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="../../../assets/admin/plugins/fullcalendar/js/main.min.js"></script>
+    <script src="../../../assets/admin/plugins/metismenu/js/metisMenu.min.js"></script>
+    <script src="../../../assets/admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                initialView: 'dayGridMonth',
+                initialDate: '2020-09-12',
+                navLinks: true, // can click day/week names to navigate views
+                selectable: true,
+                nowIndicator: true,
+                dayMaxEvents: true, // allow "more" link when too many events
+                editable: true,
+                selectable: true,
+                businessHours: true,
+                dayMaxEvents: true, // allow "more" link when too many events
+                events: [{
+                    title: 'All Day Event',
+                    start: '2020-09-01',
+                }, {
+                    title: 'Tuấn',
+                    start: '2020-09-07',
+                    end: '2020-09-10'
+                }, {
+                    groupId: 999,
+                    title: 'Trọng',
+                    start: '2020-09-09T16:00:00'
+                }, {
+                    groupId: 999,
+                    title: 'Trọng',
+                    start: '2020-09-16T16:00:00'
+                }, {
+                    title: 'Huy',
+                    start: '2020-09-11',
+                    end: '2020-09-13'
+                }, {
+                    title: 'Ninh',
+                    start: '2020-09-12T10:30:00',
+                    end: '2020-09-12T12:30:00'
+                }, {
+                    title: 'Ân',
+                    start: '2020-09-12T12:00:00'
+                }, {
+                    title: 'Trọng',
+                    start: '2020-09-12T14:30:00'
+                }, {
+                    title: 'Ninh',
+                    start: '2020-09-12T17:30:00'
+                }, {
+                    title: 'Huy',
+                    start: '2020-09-12T20:00:00'
+                }, {
+                    title: 'Huy',
+                    start: '2020-09-13T07:00:00'
+                }, {
+                    title: 'Tuấn',
+                    url: 'http://google.com/',
+                    start: '2020-09-28'
+                }]
+            });
+            calendar.render();
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const x = localStorage.getItem("login")
+            if (!x) {
+                return window.location.href = "/pagesAdmin/login.html"
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem('login')
+            return window.location.href = "/pagesAdmin/login.html"
+        }
+    </script>
+    <!--app JS-->
+    <script src="../../../assets/admin/js/app.js"></script>
+
+
+</body>
+
+</html>
